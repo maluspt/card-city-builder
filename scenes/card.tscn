@@ -6,14 +6,26 @@
 [sub_resource type="LabelSettings" id="LabelSettings_4gsan"]
 font_size = 11
 
-[node name="Card" type="TextureButton"]
-offset_right = 63.0
-offset_bottom = 93.0
-texture_normal = ExtResource("1_ycxrp")
+[node name="Card" type="Control"]
+custom_minimum_size = Vector2(63, 92)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -567.0
+offset_bottom = -268.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("2_xw5xv")
 
+[node name="CardVisual" type="Node2D" parent="."]
+
+[node name="CardSprite" type="Sprite2D" parent="CardVisual"]
+texture = ExtResource("1_ycxrp")
+centered = false
+
 [node name="Label" type="Label" parent="."]
-layout_mode = 2
+layout_mode = 0
 offset_left = 7.0
 offset_top = 41.0
 offset_right = 55.0

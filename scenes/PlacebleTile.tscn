@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://jn0drxe8yifk"]
+
+[ext_resource type="Script" path="res://PlacebleTile.gd" id="1_atwxr"]
+[ext_resource type="Texture2D" uid="uid://2uqridycqfuk" path="res://assets/images/housing-tile.png" id="2_iub6j"]
+
+[node name="PlacebleTile" type="Node2D"]
+script = ExtResource("1_atwxr")
+
+[node name="TileSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_iub6j")
+centered = false
